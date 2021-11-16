@@ -1,0 +1,13 @@
+quando existe um seletor float é necessario usar "clearfix"
+selector::after{
+  content:"";
+  clear: both;
+  display: table;
+  }
+
+
+NPM
+
+npm init  --> criar package.json
+npm install node-sass --save-dev --> instalar sass como devDependencie
+npm install --> instala tudo o que estiver na package.json
