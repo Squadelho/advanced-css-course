@@ -9,5 +9,10 @@ selector::after{
 NPM
 
 npm init  --> criar package.json
-npm install node-sass --save-dev --> instalar sass como devDependencie
+npm install --save-dev --> instalar sass como devDependencie
+npm install --save --> instalar sass como Dependencie
 npm install --> instala tudo o que estiver na package.json
+
+SASS usando live sass compiler 
+
+sass -w dir.scss dir.css
