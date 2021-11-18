@@ -1,0 +1,19 @@
+@use "../abstracts/" as *;
+
+/* global reset */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* font-size: 10px; */
+  font-size: 62.5%; /* font size é 10px (10/16=0.625) depois é gerido pelo rem */
+}
+
+body {
+  box-sizing: border-box;
+}
