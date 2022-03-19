@@ -2,6 +2,7 @@
 
 .row{
     max-width: $grid-width;
+    background-color: #eee;
     margin: 0 auto; /* centrar o bloco */
  
     &:not(:last-child){ /* todos menos o ultimo */
@@ -11,6 +12,7 @@
     @include clearfix;
 
     [class^="col-"] { /* ^ -> todos os atributos que comecem por "col-"  $ -> todas as classes que acabem com "col-"*/
+         background-color: orangered;
         float: left;
         &:not(:last-child){
             margin-right: $gutter-horizontal;

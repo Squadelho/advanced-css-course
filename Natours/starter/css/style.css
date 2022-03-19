@@ -91,6 +91,36 @@ body {
   animation-timing-function: ease-out; */
 }
 
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, #2e7e20, #28b485);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all 0.2s;
+}
+.heading-secondary:hover {
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.u-center-class {
+  text-align: center;
+}
+
+.u-margin-bottom-8 {
+  margin-bottom: 8rem;
+}
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -20vh;
+}
+
 .btn:link, .btn:visited {
   /* Estados do botão, neste caso vao ser iguais antes e depois de click */
   text-transform: uppercase;
@@ -162,13 +192,12 @@ body {
   /* 50% PARA FICAR CENTRADO */
   left: 50%;
   transform: translate(-50%, -50%);
-  /* COLOCA O ELEMNTO NO CENTRO PARA FICAR CENTRADO */
+  /* COLOCA O ELEMeNTO NO CENTRO PARA FICAR CENTRADO */
   text-align: center;
 }
 
 .row {
   max-width: 114rem;
-  background-color: #eee;
   margin: 0 auto;
   /* centrar o bloco */
 }
@@ -183,7 +212,6 @@ body {
 }
 .row [class^=col-] {
   /* ^ -> todos os atributos que comecem por "col-"  $ -> todas as classes que acabem com "col-"*/
-  background-color: orangered;
   float: left;
 }
 .row [class^=col-]:not(:last-child) {
@@ -207,5 +235,7 @@ body {
 .row .col-3-of-4 {
   width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem);
 }
+
+/* @use "layout/gridexp" as *; //grid exemplo */
 
 /*# sourceMappingURL=style.css.map */

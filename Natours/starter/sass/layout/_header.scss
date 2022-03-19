@@ -28,10 +28,7 @@
     position: absolute;
     top: 40%; /* 50% PARA FICAR CENTRADO */
     left: 50%;
-    transform: translate(
-      -50%,
-      -50%
-    ); /* COLOCA O ELEMNTO NO CENTRO PARA FICAR CENTRADO */
+    transform: translate(-50%,-50%); /* COLOCA O ELEMeNTO NO CENTRO PARA FICAR CENTRADO */
     text-align: center;
   }
 }
