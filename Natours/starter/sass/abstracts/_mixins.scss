@@ -1,7 +1,16 @@
+@use "variables.scss" as *;
+
 @mixin clearfix {
     &::after{
         content: "";
         display: table;
         clear: both;
     }
+}
+
+@mixin textgradiant{
+    display: inline-block;                                                                  //faz com que o bloco acabe onde o texto acaba
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark); //primeira parte para neter texto com gradiente
+    -webkit-background-clip: text;                                                          //segunda parte para neter texto com gradiente
+    color: transparent;                                                                     //terceira parte para neter texto com gradiente
 }
