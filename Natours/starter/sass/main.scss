@@ -1,11 +1,17 @@
 @use "abstracts/" as *;
+
 @use "base/animation" as *;
 @use "base/base" as *;
 @use "base/typography" as *;
 @use "base/utilities" as *;
+
 @use "pages/home" as *;
+@use "pages/home" as *;
+
 @use "components/button" as *;
+@use "components/composition" as *;
+
 @use "layout/header" as *;
 @use "layout/grid" as *;
 /* @use "layout/gridexp" as *; //grid exemplo */
-@use "pages/home" as *;
+
