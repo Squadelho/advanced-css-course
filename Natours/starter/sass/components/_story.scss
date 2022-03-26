@@ -1,0 +1,38 @@
+@use "../abstracts/" as *;
+
+.story{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 3rem 6rem rgba($color-black, .1);
+    background-color: $color-white;
+    border-radius: 3px;
+    padding: 6rem;
+    padding-left: 9rem; //no float tivermos que dar mais padding á esquerda (6-3+6=9)
+    font-size: $default-font-size;
+    transform: skewX(-12deg);
+
+    &__shape{
+        width: 15rem;
+        height: 15rem;
+        
+        //fazer o circulo tem que ter float
+        float: left;
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        -webkit-clip-path: circle(50% at 50% 50%);
+        // para mover fload tem que se usar o translate
+        transform: translateX(-3rem) skewX(12deg);
+
+    }
+
+    &__img{
+        height: 100%;
+    }
+
+    &__text{
+        transform: skewX(12deg);
+    }
+}
+
